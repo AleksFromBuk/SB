@@ -18,8 +18,8 @@ public class LoadHistoryTransaction {
     public LoadHistoryTransaction(TransactionPricesRepository repository) {
         this.repository = repository;
         this.forPairsName.put(1L, "RUBUSD");
-        this.forPairsName.put(2L, "EURUSD");
-        this.forPairsName.put(3L, "USDJPY");
+        this.forPairsName.put(2L, "USDJPY");
+        this.forPairsName.put(3L, "EURUSD");
     }
 
     @PostConstruct
