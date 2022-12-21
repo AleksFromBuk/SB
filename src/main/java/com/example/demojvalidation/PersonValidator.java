@@ -32,7 +32,7 @@ public class PersonValidator implements org.springframework.validation.Validator
 
         Person p = (Person) obj;
         if (p.getAge() < 0) {
-            errors.rejectValue("age", "only.positive.numbers");
+            errors.rejectValue("age", "","only.positive.numbers");
         }
     }
 }

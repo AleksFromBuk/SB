@@ -35,6 +35,9 @@ public class ValidationController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String savePersonAction(@Valid @ModelAttribute("person") Person person,
                                    BindingResult bindingResult, Model model) {
+
+        personValidator.validate(person, bindingResult);
+
         if (bindingResult.hasErrors()) {
             return "personEdit";
         }

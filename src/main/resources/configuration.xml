@@ -10,7 +10,7 @@
 
 
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:message"/>
+        <property name="basename" value="classpath:message_ru"/>
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
 

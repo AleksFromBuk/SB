@@ -10,7 +10,6 @@ public class Person {
     private String name;
 
     @Digits(integer = 3, fraction = 0, message = "No more than 3 characters")
-
     private Integer age;
 
     public Person() {
