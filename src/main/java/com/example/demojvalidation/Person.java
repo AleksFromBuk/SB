@@ -1,15 +1,17 @@
 package com.example.demojvalidation;
 
 import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 
 public class Person {
 
-    @Size(min = 2, max = 50)
+    @Size(min = 2, max = 50/*, message = ""*/)
     private String name;
 
-    @Digits(integer = 3, fraction = 0, message = "No more than 3 characters")
+    @Digits(integer = 3, fraction = 0, message = "")
+    @NotNull
     private Integer age;
 
     public Person() {
